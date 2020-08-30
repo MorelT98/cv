@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 body {
     margin: 0px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -18,10 +19,65 @@ h2 {
     text-align: center;
 }
 
+.header {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: #0a97b0;
+    height: 250px;
+    padding: 20px 20px;
+}
+
+.menu {
+    float: left;
+    width: 150px;
+    height: 40px;
+    background-color: #0a97b0;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    background-color: #098ba1;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.menu a:hover {
+    color: #4cd3c2;
+    font-weight: normal;
+}
+
+.submenu {
+    display: none;
+}
+
+.menu:hover .submenu {
+    display: block;
+}
+
 .description {
     margin: 0;
     font-weight: normal;
     color: #faeee7;
+}
+
+a {
+    text-decoration: none;
+    color: #4cd3c2;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    font-weight: bold;
 }
 
 h3 {
@@ -29,17 +85,24 @@ h3 {
     color: #4cd3c2;
 }
 
-hr {
-    border: 0;
-    border-top: 10px dotted #EAF6F6;
-    width: 10%;
+.dots {
+    text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
+.dot {
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+    background-color: #EAF6F6;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .top-container {
     position: relative;
-    padding-top: 300px;
+    padding-top: 100px;
     padding-bottom: 100px;
     background-color: #0a97b0;
     color: #faeee7;
@@ -62,8 +125,7 @@ hr {
 }
 
 .img-profile,
-.img-programming,
-.img-electronics {
+.img {
     width: 150px;
     height: 150px;
 }
@@ -73,26 +135,26 @@ hr {
     margin-top: 50px;
 }
 
-.skills {
+.items {
     margin: 0 23%;
     text-align: center;
 }
 
-.img-programming {
+.img-left {
     margin-right: 30px;
 }
 
-.description-programming {
+.description-left {
     width: 400px;
 }
 
-.img-electronics {
+.img-right {
     margin-left: 30px;
     position: relative;
     left: 380px;
 }
 
-.description-electronics {
+.description-right {
     width: 400px;
     position: relative;
     left: -180px;
@@ -122,7 +184,7 @@ hr {
     margin-top: 40px;
 }
 
-.skill-row {
+.row {
     display: inline-flex;
     margin-top: 40px;
 }
@@ -154,4 +216,8 @@ hr {
     -moz-border-radius: 10px;
     border-radius: 10px;
     text-decoration: none;
+}
+
+.copyrights {
+    font-size: 5px;
 }
