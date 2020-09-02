@@ -101,7 +101,7 @@ h3 {
 
 .top-container {
     position: relative;
-    padding-top: 100px;
+    width: 100%;
     padding-bottom: 100px;
     background-color: #0a97b0;
     color: #faeee7;
