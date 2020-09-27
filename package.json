@@ -1,24 +1,27 @@
 {
-  "name": "cv",
-  "version": "1.0.0",
-  "description": "This is a resume of my career and personal projects",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MorelT98/cv.git"
-  },
-  "author": "Morel Takougang",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MorelT98/cv/issues"
-  },
-  "homepage": "https://github.com/MorelT98/cv#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1"
-  }
+    "name": "cv",
+    "version": "1.0.0",
+    "description": "This is a resume of my career and personal projects",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MorelT98/cv.git"
+    },
+    "author": "Morel Takougang",
+    "license": "ISC",
+    "engines": {
+        "node": "12.18.3"
+    },
+    "bugs": {
+        "url": "https://github.com/MorelT98/cv/issues"
+    },
+    "homepage": "https://github.com/MorelT98/cv#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1"
+    }
 }
