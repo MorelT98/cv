@@ -1,0 +1,14 @@
+h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+}
+
+hr {
+    margin: 0;
+    border: 1px solid #A0D1DB;
+}
+
+.top-container {
+    padding-bottom: 25%;
+}
