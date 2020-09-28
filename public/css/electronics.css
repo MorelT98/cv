@@ -3,7 +3,8 @@
     padding-left: 30%;
     width: 100%;
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .top-container>* {
@@ -11,8 +12,16 @@
 }
 
 .main-container {
-    margin: auto;
+    margin: 3% auto;
     width: 80%;
+}
+
+.main-container>h2 {
+    text-align: center;
+}
+
+.title {
+    margin: auto 1%;
 }
 
 video {
@@ -113,14 +122,14 @@ video {
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 100s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 100s;
 }
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: 1
     }
     to {
         opacity: 1
@@ -129,7 +138,7 @@ video {
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 1
     }
     to {
         opacity: 1
@@ -140,17 +149,16 @@ video {
     display: flex;
 }
 
-.slide-row img {
-    flex: 50%;
-    padding: 20px;
-}
-
 .description {
     text-align: center;
     align-items: center;
-    padding: 100px 0;
 }
 
 .description p {
     color: black;
+}
+
+.portrait {
+    margin-top: 1%;
+    margin-bottom: 1%;
 }

@@ -2,12 +2,12 @@
 
     <div class="top-container">
         <img src="images/circuit.png" height="150px">
-        <h1>Electronics.</h1>
+        <h1 class="title">Electronics.</h1>
     </div>
 
     <div class="main-container">
         <h2>8-bit Breadboard Computer</h2>
-        <video width="30%" height="30%" controls>
+        <video width="40%" height="40%" controls>
             <source src="images/8bit/8bit-fib.mov" type="video/mp4" />
             Your browser does not support this video tag
         </video>
@@ -54,9 +54,9 @@
 
             <div class="mySlides fade">
                 <div class="slide-row">
-                    <div class="description portrait">
+                    <div class="description center">
                         <h3>ALU (Arithmetic and Logic Unit)</h3>
-                        <img src="images/8bit/ALU.jpg" width="700" height="500">
+                        <img src="images/8bit/ALU.jpg" width="500" height="350">
                         <p>This is the <strong>brain</strong> of the computer, the part that does the math. It comes with two <strong>registers</strong>, which hold the current values being added and/or subtracted, and the <strong>ALU</strong> itself which
                             performs the operations.
                         </p>
@@ -68,7 +68,7 @@
                 <div class="slide-row">
                     <div class="description portrait">
                         <h3>RAM (Random Access Memory)</h3>
-                        <img src="images/8bit/RAM.jpg" width="700" height="500">
+                        <img src="images/8bit/RAM.jpg" width="500" height="350">
                         <p>Wether it's instructions or numbers, the RAM saves it all. It's basically a giant <strong>array of flip-flops</strong> (circuits that save one bit of memory). In our case, it is a <strong>16x8 array</strong>: <strong>16 possible memory locations</strong>                            and <strong>8 bits per location</strong>. The reason why is it called Random Access is because each of those memory locations is readable and editable at anytime (Unless you turn off the computer, which will erase your RAM
                             contents.)
                         </p>
@@ -84,7 +84,7 @@
                 <div class="slide-row">
                     <div class="description portrait">
                         <h3>Control Signal</h3>
-                        <img src="images/8bit/control-logic.jpg" width="900" height="500">
+                        <img src="images/8bit/control-logic.jpg" width="500" height="300">
                         <p>This is the part of the computer that <strong>reads and interprets intructions saved in the RAM</strong>. For example, if we have the binary 01001111 (79 in decimal) at memory location 0110 (6 in decimal), the control signal is
                             the one that determines if we are actually talking about the number 79, or if 01001111 means something else, perhaps "store the result of the addition into the RAM". The control signal is preprogrammed (using and EEPROM) to
                             figure that out.
@@ -97,7 +97,7 @@
                 <div class="slide-row">
                     <div class="description portrait">
                         <h3>Display</h3>
-                        <img src="images/8bit/display.JPG" width="600" height="230">
+                        <img src="images/8bit/display.JPG" width="500" height="200">
                         <p>This takes a binary input coming from the bus an <strong>outputs a decimal</strong>.
                         </p>
                     </div>
@@ -121,7 +121,7 @@
                 <div class="slide-row">
                     <div class=" description portrait">
                         <h3>Architecture</h3>
-                        <img src="images/8bit/architecture.jpeg" height="500" width="700">
+                        <img src="images/8bit/architecture.jpeg" height="350" width="500">
                         <p>This is the final architecture of the breadboard computer.
                         </p>
                         <ul color="black">
@@ -153,9 +153,16 @@
             <span class="dot " onclick="currentSlide(8) "></span>
         </div>
 
-        <script>
-            currentSlide(1);
-        </script>
+        <!-- Custom scripts -->
+        <% if(typeof scripts !== 'undefined' && scripts) { %>
+            <% scripts.forEach(script => { %>
+                <script src="<%= script %>"></script>
+                <% }) %>
+                    <% } %>
+
+                        <script>
+                            currentSlide(1);
+                        </script>
     </div>
 
     <%- include('partials/footer') %>

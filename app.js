@@ -22,7 +22,7 @@ app.get("/", function(req, res) {
 
 app.get("/electronics", (req, res) => {
     res.render("electronics", {
-        stylesheets: ["/css/styles.css", "/css/electronics.css"],
+        stylesheets: ["/css/styles.css", "css/electronics.css"],
         scripts: ['/scripts/slideshow.js']
     });
 });
