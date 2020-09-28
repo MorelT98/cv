@@ -46,8 +46,9 @@ app.get("/mathematics", (req, res) => {
 });
 
 app.get("/cv", (req, res) => {
-    res.render("missing", {
-        stylesheets: ["/css/styles.css", "css/missing.css"]
+    res.render("cv", {
+        stylesheets: ["/css/cv.css"],
+        scripts: ['/scripts/cv.js']
     });
 })
 

@@ -6,6 +6,13 @@
     <p>© 2020 Morel Takougang</p>
     <p class="copyrights">Icons were obtained on flaticon.cc</p>
 </div>
-</body>
 
-</html>
+<!-- Custom scripts -->
+<% if(typeof scripts !== 'undefined' && scripts) { %>
+    <% scripts.forEach(script => { %>
+        <script src="<%= script %>"></script>
+        <% }) %>
+            <% } %>
+                </body>
+
+                </html>

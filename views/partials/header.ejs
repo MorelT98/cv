@@ -23,19 +23,13 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 
-    <!-- Custom scripts -->
-    <% if(typeof scripts !== 'undefined' && scripts) { %>
-        <% scripts.forEach(script => { %>
-            <script src="<%= script %>"></script>
+
+    <!-- Custom Stylesheets -->
+    <% if(typeof stylesheets !== 'undefined' && stylesheets) { %>
+        <% stylesheets.forEach(style => { %>
+            <link rel="stylesheet" href="<%= style %>" type="text/css">
             <% }) %>
                 <% } %>
-
-                    <!-- Custom Stylesheets -->
-                    <% if(typeof stylesheets !== 'undefined' && stylesheets) { %>
-                        <% stylesheets.forEach(style => { %>
-                            <link rel="stylesheet" href="<%= style %>" type="text/css">
-                            <% }) %>
-                                <% } %>
 
 </head>
 
